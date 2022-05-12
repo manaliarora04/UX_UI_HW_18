@@ -232,3 +232,20 @@ footer .contact div:first-child {
     width: 100%;
   }
 }
+
+/* My Skills starts here */
+
+.mySkills {
+  text-align: center;
+}
+ 
+ .skillSet {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300 300 300;
+ }
+  /* .skillsGrid {
+    display: grid;
+  grid-template-columns: 5;
+  grid-template-rows: 3;
+ }  */
