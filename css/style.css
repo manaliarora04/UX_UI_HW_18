@@ -1,11 +1,17 @@
+html, body{
+  height:100%;
+}
 body {
 
   font-family: 'Montserrat', sans-serif;
   background-image: url("../images/backgroundImage.png");
   color: white;
-
+  display:flex;
+  flex-direction: column;
 }
-
+.main {
+  flex-grow: 2;
+}
 h2 {
   font-size: 25px;
   font-weight: 300;
@@ -87,6 +93,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .text {
