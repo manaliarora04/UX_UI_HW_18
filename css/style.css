@@ -83,7 +83,7 @@ h1 {
 
 footer {
 
-  padding: 10px;
+  /*padding: 10px;*/
   text-align: center;
   /* Center text*/
   background: #E5E5E5 60%;
@@ -94,6 +94,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
+  width: 100%;
 }
 
 .text {
@@ -186,11 +187,11 @@ footer .contact div:first-child {
 
 }
 
-.flexContainer .caseStudy {
+.caseStudy {
   width: 50%;
   height: auto;
   display: flex;
-  justify-content: flex-end;
+  justify-content:center;
   flex-direction: column;
 }
 
@@ -200,8 +201,8 @@ footer .contact div:first-child {
 }
 
 .flexContainer img {
-  height: auto;
-  width: 50%;
+  height: 200px;
+  width: auto;
 }
 
 .caseStudy h3 {
@@ -209,29 +210,6 @@ footer .contact div:first-child {
 }
 
 
-
-/*media query*/
-
-/* @media only screen and (max-width: 600) {
-  #categoryGrid {
-    grid-template-rows: 300px 300px 300px 300px;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "NGO Website Redesigning" 
-    "GotYou Parental Control App"
-    "Government Agency Web Redesigning"
-    "Go-Fly Travel App";
-  }
-} */
-
-@media only screen and (max-width: 600px) {
-  .flexContainer {
-    flex-direction: column;
-  }
-  .flexContainer img {
-    width: 100%;
-  }
-}
 
 /* My Skills starts here */
 
@@ -243,7 +221,6 @@ footer .contact div:first-child {
  .skillSet {
   /*margin: 0px 5%;*/
   display: grid;
-  grid-template-rows: 300 300 300;
   grid-template-columns: 1fr 1fr 1fr;
   
  }
@@ -255,3 +232,40 @@ footer .contact div:first-child {
     grid-template-columns: 1fr;
   grid-template-rows: 300 300 300 300 300;
  }  */
+.hamburger {
+  display:none;
+  height: 50px;
+  width: 50px;
+  
+}
+ @media only screen and (max-width: 600px) {
+  .flexContainer {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+  }
+  .flexContainer img {
+    width: 100%;
+  }
+  .skillSet {
+       
+    grid-template-columns: 1fr;
+  
+   }
+  .caseStudy {
+    width: 60%;
+  } 
+  .links {
+    display: none;
+  
+  }
+  .hamburger {
+    display:block;
+  }
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
