@@ -237,15 +237,21 @@ footer .contact div:first-child {
 
 .mySkills {
   text-align: center;
+  
 }
  
  .skillSet {
+  /*margin: 0px 5%;*/
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 300 300 300;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+ }
+ h4{
+   font-size: 20px;
+   font-weight: 150;
  }
   /* .skillsGrid {
-    display: grid;
-  grid-template-columns: 5;
-  grid-template-rows: 3;
+    grid-template-columns: 1fr;
+  grid-template-rows: 300 300 300 300 300;
  }  */
