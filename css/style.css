@@ -8,9 +8,11 @@ body {
   color: white;
   display:flex;
   flex-direction: column;
+  margin: 0;
 }
 .main {
   flex-grow: 2;
+  margin: 8px;
 }
 h2 {
   font-size: 25px;
@@ -32,9 +34,11 @@ h1 {
 }
 
 
-.header.navigation {
+.navigation {
   margin: 15px;
   font-size: 25px;
+  display: flex;
+  justify-content: space-between;
 }
 
 
@@ -52,11 +56,6 @@ h1 {
 
 }
 
-.navigation {
-  display: flex;
-  justify-content: space-between;
-
-}
 
 .links ul {
   padding: 10;
